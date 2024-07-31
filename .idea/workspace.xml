@@ -13,7 +13,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/dao/StudentDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dao/StudentDAOTest.java" afterDir="false" />
     </list>
@@ -280,7 +279,7 @@
       <updated>1722333674726</updated>
       <workItem from="1722333677415" duration="3958000" />
       <workItem from="1722338775189" duration="934000" />
-      <workItem from="1722406277782" duration="28323000" />
+      <workItem from="1722406277782" duration="28630000" />
     </task>
     <servers />
   </component>
