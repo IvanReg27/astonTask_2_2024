@@ -122,11 +122,11 @@ public class StudentDAO extends ConnectionDB {
         }
         return rowDeleted;
     }
-    public boolean updateUser(Student student) throws SQLException {
+    public boolean updateStudent(Student student) throws SQLException {
         boolean rowUpdated;
         try (Connection connection = getConnection();
              PreparedStatement statement = connection.prepareStatement(UPDATE_STUDENTS_SQL);) {
-            statement.setString(1, student.getName());            ;
+            statement.setString(1, student.getName());
             statement.setInt(2, student.getCoordinator_id());
             statement.setInt(3, student.getId());
 

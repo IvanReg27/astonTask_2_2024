@@ -17,6 +17,9 @@ public class Student {
         this.coordinator_id = coordinator_id;
     }
 
+    public Student(String name, int coordinator_id) {
+    }
+
     public int getId() {
         return id;
     }
