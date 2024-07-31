@@ -1,15 +1,15 @@
-package servlet;
+package model;
 
 import java.util.List;
 
-public class CourseServlet {
+public class Course {
     protected int id;
     protected String course;
-    protected List<Student> student;
+    protected List<Student> students;
 
-    public CourseServlet() {
+    public Course() {
     }
-    public CourseServlet(int id, String course) {
+    public Course(int id, String course) {
         this.id = id;
         this.course = course;
     }
