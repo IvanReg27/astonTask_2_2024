@@ -1,0 +1,13 @@
+version: "3"
+services:
+  my-web-app-db:
+    image: mydatabase_02
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=myDB
+  my-web-app:
+    build: .
+    ports:
+      - "5438:5438"
+    depends_on:
+      - my-web-app-db
