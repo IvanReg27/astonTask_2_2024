@@ -1,13 +1,14 @@
 version: "3"
 services:
   my-web-app-db:
-    image: mydatabase_02
+    image: mydatabase
     environment:
-      - MYSQL_ROOT_PASSWORD=password
-      - MYSQL_DATABASE=myDB
+      - POSTGRES_PASSWORD=1234
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=mydatabase_02
   my-web-app:
     build: .
     ports:
-      - "5438:5438"
+      - "5438:5432"
     depends_on:
       - my-web-app-db
