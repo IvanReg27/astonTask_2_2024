@@ -52,13 +52,13 @@ class StudentDAOTest {
         }
     }
     @Test
-    void testInsertStudent() throws SQLException {
-        StudentDAO studentDAO = new StudentDAO();
+    void testInsertUser() throws SQLException {
+        StudentDAO userDAO = new StudentDAO();
         Student student = new Student("Ivan", 1);
-        studentDAO.insertStudent(student);
+        userDAO.insertStudent(student);
 
         try (Statement statement = connection.createStatement()) {
-            String countSQL = "SELECT COUNT(*) FROM students";
+            String countSQL = "SELECT COUNT(*) FROM student";
             assertTrue(statement.executeQuery(countSQL).next());
             System.out.println("The record has been created. The database is working...");
         }

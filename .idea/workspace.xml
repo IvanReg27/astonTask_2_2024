@@ -15,6 +15,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dao/StudentDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dao/StudentDAOTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +85,7 @@
       <recent name="connectDB" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ConnectionDBTest">
+  <component name="RunManager" selected="JUnit.StudentDAOTest.testInsertUser">
     <configuration name="ConnectionDBTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="astonTask_2_2024" />
       <extension name="coverage">
@@ -146,7 +147,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentDAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StudentDAOTest.testInsertUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="astonTask_2_2024" />
       <extension name="coverage">
         <pattern>
@@ -156,7 +157,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="dao" />
       <option name="MAIN_CLASS_NAME" value="dao.StudentDAOTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="testInsertUser" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -255,16 +257,16 @@
       <item itemvalue="JUnit.CourseStudentTest" />
       <item itemvalue="JUnit.CourseTest" />
       <item itemvalue="JUnit.CourseTest.verificationCourse" />
-      <item itemvalue="JUnit.StudentDAOTest" />
+      <item itemvalue="JUnit.StudentDAOTest.testInsertUser" />
       <item itemvalue="Tomcat Server.Tomcat 10.1.26" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StudentDAOTest.testInsertUser" />
         <item itemvalue="JUnit.ConnectionDBTest" />
         <item itemvalue="JUnit.CourseStudentTest" />
         <item itemvalue="JUnit.CourseTest" />
         <item itemvalue="JUnit.CourseTest.verificationCourse" />
-        <item itemvalue="JUnit.StudentDAOTest" />
       </list>
     </recent_temporary>
   </component>
@@ -278,7 +280,7 @@
       <updated>1722333674726</updated>
       <workItem from="1722333677415" duration="3958000" />
       <workItem from="1722338775189" duration="934000" />
-      <workItem from="1722406277782" duration="27241000" />
+      <workItem from="1722406277782" duration="28323000" />
     </task>
     <servers />
   </component>
