@@ -11,7 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="64aa9e49-4f3d-4cc5-a46c-a48499f89f66" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dao/StudentDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dao/StudentDAOTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +81,7 @@
       <recent name="connectDB" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.26">
+  <component name="RunManager" selected="JUnit.StudentDAOTest">
     <configuration name="ConnectionDBTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="astonTask_2_2024" />
       <extension name="coverage">
@@ -277,7 +277,7 @@
       <workItem from="1722406277782" duration="28760000" />
       <workItem from="1722623166354" duration="221000" />
       <workItem from="1722623415293" duration="573000" />
-      <workItem from="1722669726205" duration="610000" />
+      <workItem from="1722669726205" duration="3303000" />
     </task>
     <servers />
   </component>

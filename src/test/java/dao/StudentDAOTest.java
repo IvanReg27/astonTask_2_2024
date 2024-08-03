@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @Testcontainers
 class StudentDAOTest {
     @Container
-    private static final PostgreSQLContainer<?> postgresqlContainer = new PostgreSQLContainer<>("postgresql:8.0")
+    private static final PostgreSQLContainer<?> postgresqlContainer = new PostgreSQLContainer<>("postgresql:test")
             .withUsername("test")
             .withPassword("test")
             .withDatabaseName("test");
@@ -58,7 +58,7 @@ class StudentDAOTest {
         userDAO.insertStudent(student);
 
         try (Statement statement = connection.createStatement()) {
-            String countSQL = "SELECT COUNT(*) FROM student";
+            String countSQL = "SELECT COUNT(*) FROM students";
             assertTrue(statement.executeQuery(countSQL).next());
             System.out.println("The record has been created. The database is working...");
         }
