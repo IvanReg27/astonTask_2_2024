@@ -32,7 +32,7 @@ class CourseTest {
     @Test
     void remoteServiceReturnCourse() {
         when(newCourse.getCourse()).thenReturn("Java");
-        assertEquals("Java developer", newCourse.getCourse());
+        assertEquals("Java", newCourse.getCourse());
     }
     @Test
     void verificationId() {

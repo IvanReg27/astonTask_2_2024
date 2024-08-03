@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @Testcontainers
 class StudentDAOTest {
     @Container
-    private static final PostgreSQLContainer<?> postgresqlContainer = new PostgreSQLContainer<>("postgresql:test")
+    private static final PostgreSQLContainer<?> postgresqlContainer = new PostgreSQLContainer<>("postgres:11.1")
             .withUsername("test")
             .withPassword("test")
             .withDatabaseName("test");
@@ -52,10 +52,10 @@ class StudentDAOTest {
         }
     }
     @Test
-    void testInsertUser() throws SQLException {
-        StudentDAO userDAO = new StudentDAO();
+    void testInsertStudent() throws SQLException {
+        StudentDAO studentDAO = new StudentDAO();
         Student student = new Student("Ivan", 1);
-        userDAO.insertStudent(student);
+        studentDAO.insertStudent(student);
 
         try (Statement statement = connection.createStatement()) {
             String countSQL = "SELECT COUNT(*) FROM students";
