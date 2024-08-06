@@ -11,8 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="64aa9e49-4f3d-4cc5-a46c-a48499f89f66" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/StudentDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/dao/StudentDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dao/StudentDAOTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,29 +82,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.StudentDAOTest">
-    <configuration name="All in astonTask_2_2024" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="astonTask_2_2024" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConnectionDBTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="astonTask_2_2024" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="connectDB.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="connectDB" />
-      <option name="MAIN_CLASS_NAME" value="connectDB.ConnectionDBTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="StudentDAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="astonTask_2_2024" />
       <extension name="coverage">
@@ -134,22 +109,6 @@
       <option name="PACKAGE_NAME" value="dao" />
       <option name="MAIN_CLASS_NAME" value="dao.StudentDAOTest" />
       <option name="METHOD_NAME" value="testInsertStudent" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentDAOTest.testInsertUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="astonTask_2_2024" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dao.StudentDAO" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.StudentDAOTest" />
-      <option name="METHOD_NAME" value="testInsertUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -251,9 +210,9 @@
           <option name="portBindings">
             <list>
               <DockerPortBindingImpl>
-                <option name="containerPort" value="5432" />
+                <option name="containerPort" value="8080" />
                 <option name="hostIp" value="127.0.0.1" />
-                <option name="hostPort" value="5439" />
+                <option name="hostPort" value="8085" />
               </DockerPortBindingImpl>
             </list>
           </option>
@@ -269,22 +228,56 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.my-web-app-db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="my-web-app-db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Docker.TomcatConfig" />
-      <item itemvalue="JUnit.All in astonTask_2_2024" />
+      <item itemvalue="Docker.docker-compose.yml.my-web-app-db: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.db: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="JUnit.StudentDAOTest.testInsertStudent" />
       <item itemvalue="JUnit.StudentDAOTest" />
-      <item itemvalue="JUnit.ConnectionDBTest" />
-      <item itemvalue="JUnit.StudentDAOTest.testInsertUser" />
       <item itemvalue="Tomcat Server.Tomcat 10.1.26" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.StudentDAOTest" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.my-web-app-db: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.db: Compose Deployment" />
         <item itemvalue="JUnit.StudentDAOTest.testInsertStudent" />
-        <item itemvalue="JUnit.All in astonTask_2_2024" />
-        <item itemvalue="JUnit.StudentDAOTest.testInsertUser" />
-        <item itemvalue="JUnit.ConnectionDBTest" />
       </list>
     </recent_temporary>
   </component>
@@ -308,6 +301,11 @@
       <workItem from="1722802144100" duration="1221000" />
       <workItem from="1722804669949" duration="4346000" />
       <workItem from="1722809079336" duration="85000" />
+      <workItem from="1722809680962" duration="233000" />
+      <workItem from="1722885355680" duration="6894000" />
+      <workItem from="1722892555474" duration="2207000" />
+      <workItem from="1722894816375" duration="927000" />
+      <workItem from="1722896158748" duration="725000" />
     </task>
     <servers />
   </component>
@@ -320,6 +318,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="org.postgresql.util.PSQLException" package="org.postgresql.util" />
           <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="2" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

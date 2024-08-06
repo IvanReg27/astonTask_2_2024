@@ -19,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class StudentDAOTest {
     @Container
     private static final PostgreSQLContainer<?> postgresqlContainer = new PostgreSQLContainer<>("postgres:16-alpine")
-            //.withExposedPorts(5438)
+            //.withExposedPorts(5439)
             .withUsername("test")
             .withPassword("test")
             .withDatabaseName("test");
