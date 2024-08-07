@@ -35,6 +35,7 @@ public class StudentDAO extends ConnectionDB {
             printSQLException(e);
         }
     }
+
     public Student selectStudent(int id) {
         Student student = null;
         try (Connection connection = getConnection();
@@ -53,6 +54,7 @@ public class StudentDAO extends ConnectionDB {
         }
         return student;
     }
+
     public List<Student> selectAllStudents() {
 
         List<Student> students = new ArrayList<>();
@@ -73,6 +75,7 @@ public class StudentDAO extends ConnectionDB {
         }
         return students;
     }
+
     public List<Course> selectAllCourses() {
 
         List<Course> courses = new ArrayList<>();
@@ -92,6 +95,7 @@ public class StudentDAO extends ConnectionDB {
         }
         return courses;
     }
+
     public List<CourseStudent> selectAllCourseStudent() {
 
         List<CourseStudent> courseStudent = new ArrayList<>();
@@ -112,6 +116,7 @@ public class StudentDAO extends ConnectionDB {
         }
         return courseStudent;
     }
+
     public boolean deleteStudent(int id) throws SQLException {
         boolean rowDeleted;
         try (Connection connection = getConnection();
@@ -121,6 +126,7 @@ public class StudentDAO extends ConnectionDB {
         }
         return rowDeleted;
     }
+
     public boolean updateStudent(Student student) throws SQLException {
         boolean rowUpdated;
         try (Connection connection = getConnection();
@@ -133,6 +139,7 @@ public class StudentDAO extends ConnectionDB {
         }
         return rowUpdated;
     }
+
     private void printSQLException(SQLException ex) {
         for (Throwable e : ex) {
             if (e instanceof SQLException) {

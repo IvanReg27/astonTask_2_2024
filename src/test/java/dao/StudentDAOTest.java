@@ -24,13 +24,13 @@ public class StudentDAOTest {
 
     @Container
     static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:16-alpine")
-            .withExposedPorts(5439)
+            .withExposedPorts(5433)
             .withUsername("test")
             .withPassword("test")
             .withDatabaseName("test")
             .withReuse(true)
             .withCreateContainerCmdModifier(cmd -> cmd.withHostConfig(
-                    new HostConfig().withPortBindings(new PortBinding(Ports.Binding.bindPort(5439), new ExposedPort(5432)))
+                    new HostConfig().withPortBindings(new PortBinding(Ports.Binding.bindPort(5433), new ExposedPort(5432)))
             ));
     private static Connection connection;
 
@@ -49,6 +49,7 @@ public class StudentDAOTest {
             statement.execute(createTableSQL);
         }
     }
+
     @AfterAll
     static void cleanup() throws SQLException {
         if (connection != null) {
@@ -59,10 +60,11 @@ public class StudentDAOTest {
             connection.close();
         }
     }
+
     @Test
     void testInsertStudent() throws SQLException {
         StudentDAO studentDAO = new StudentDAO();
-        Student student = new Student("Иван",1);
+        Student student = new Student("Иван", 1);
         studentDAO.insertStudent(student);
 
         try (Statement statement = connection.createStatement()) {

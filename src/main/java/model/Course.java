@@ -9,19 +9,24 @@ public class Course {
 
     public Course() {
     }
+
     public Course(int id, String course) {
         this.id = id;
         this.course = course;
     }
+
     public int getId() {
         return id;
     }
+
     public void setId(int id) {
         this.id = id;
     }
+
     public String getCourse() {
         return course;
     }
+
     public void setCourse(String city) {
         this.course = city;
     }

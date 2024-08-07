@@ -11,47 +11,57 @@ import static org.mockito.Mockito.*;
 class CoordinatorTest {
     @Mock
     Student newCoordinator;
+
     @BeforeEach
     void setup() {
         MockitoAnnotations.openMocks(this);
     }
+
     @Test
     void getId() {
         assertEquals(0, newCoordinator.getId());
     }
+
     @Test
     void getName() {
         assertEquals(null, newCoordinator.getName());
     }
+
     @Test
     void getCoordinator_id() {
         assertEquals(0, newCoordinator.getCoordinator_id());
     }
+
     @Test
     void remoteServiceReturnId() {
         when(newCoordinator.getId()).thenReturn(1);
         assertEquals(1, newCoordinator.getId());
     }
+
     @Test
     void remoteServiceReturnName() {
         when(newCoordinator.getName()).thenReturn("Sergey");
         assertEquals("Sergey", newCoordinator.getName());
     }
+
     @Test
     void verificationId() {
         newCoordinator.getId();
         verify(newCoordinator).getId();
     }
+
     @Test
     void verificationName() {
         newCoordinator.getName();
         verify(newCoordinator).getName();
     }
+
     @Test
     void verificationCoordinator_id() {
         newCoordinator.getCoordinator_id();
         verify(newCoordinator).getCoordinator_id();
     }
+
     @Test
     void verificationSetCoordinator() {
         newCoordinator.setId(1);
@@ -61,6 +71,7 @@ class CoordinatorTest {
         verify(newCoordinator).setName("Sergey");
         verify(newCoordinator).setCoordinator_id(1);
     }
+
     @Test
     void verificationCoordinatorOther() {
         assertEquals(null, newCoordinator.getName());

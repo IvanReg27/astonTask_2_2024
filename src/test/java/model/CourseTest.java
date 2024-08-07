@@ -12,38 +12,46 @@ import static org.mockito.Mockito.when;
 class CourseTest {
     @Mock
     Course newCourse;
+
     @BeforeEach
     void setup() {
         MockitoAnnotations.openMocks(this);
     }
+
     @Test
     void getId() {
         assertEquals(0, newCourse.getId());
     }
+
     @Test
     void getCourse() {
         assertEquals(null, newCourse.getCourse());
     }
+
     @Test
     void remoteServiceReturnId() {
         when(newCourse.getId()).thenReturn(1);
         assertEquals(1, newCourse.getId());
     }
+
     @Test
     void remoteServiceReturnCourse() {
         when(newCourse.getCourse()).thenReturn("Java");
         assertEquals("Java", newCourse.getCourse());
     }
+
     @Test
     void verificationId() {
         newCourse.getId();
         verify(newCourse).getId();
     }
+
     @Test
     void verificationCourse() {
         newCourse.getCourse();
         verify(newCourse).getCourse();
     }
+
     @Test
     void verificationSetCourse() {
         newCourse.setId(1);

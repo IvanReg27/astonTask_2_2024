@@ -6,6 +6,7 @@ public class Coordinator {
     protected int id;
     protected String name;
     protected List<Student> students;
+
     public Coordinator() {
     }
 

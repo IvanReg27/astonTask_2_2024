@@ -12,19 +12,23 @@ import static org.mockito.Mockito.when;
 class ConnectionDBTest {
     @Mock
     ConnectionDB newConnectionDB;
+
     @BeforeEach
     void setup() {
         MockitoAnnotations.openMocks(this);
     }
+
     @Test
     void getConnection() {
         assertEquals(null, newConnectionDB.getConnection());
     }
+
     @Test
     void remoteServiceReturnConnection() {
         when(newConnectionDB.getConnection()).thenReturn(null);
         assertEquals(null, newConnectionDB.getConnection());
     }
+
     @Test
     void verificationConnection() {
         newConnectionDB.getConnection();

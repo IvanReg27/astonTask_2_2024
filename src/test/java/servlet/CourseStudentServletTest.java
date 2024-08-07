@@ -12,6 +12,7 @@ import static org.mockito.Mockito.when;
 class CourseStudentServletTest {
     @Mock
     CourseStudentServlet newCourseStudentServlet;
+
     @BeforeEach
     void setup() {
         MockitoAnnotations.openMocks(this);
@@ -26,14 +27,17 @@ class CourseStudentServletTest {
     void doGet() {
         assertEquals(null, newCourseStudentServlet.getServletName());
     }
+
     @Test
     void remoteServiceReturnInit() {
         when(newCourseStudentServlet.getInitParameterNames()).thenReturn(null);
     }
+
     @Test
     void remoteServiceReturnDoGet() {
         when(newCourseStudentServlet.getServletName()).thenReturn(null);
     }
+
     @Test
     void verificationInit() {
         newCourseStudentServlet.init();

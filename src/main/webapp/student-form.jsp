@@ -7,8 +7,8 @@
 --%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+         pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
     <title>Student Management Application</title>
@@ -55,19 +55,21 @@
                     </caption>
 
                     <c:if test="${student != null}">
-                        <input type="hidden" name="id" value="<c:out value='${student.id}' />" />
+                        <input type="hidden" name="id" value="<c:out value='${student.id}' />"/>
                     </c:if>
 
                     <fieldset class="form-group">
                         <label>Student Name</label> <input type="text"
-                                                        value="<c:out value='${student.name}' />" class="form-control"
-                                                        name="name" required="required">
+                                                           value="<c:out value='${student.name}' />"
+                                                           class="form-control"
+                                                           name="name" required="required">
                     </fieldset>
 
                     <fieldset class="form-group">
                         <label>Coordinator_id</label> <input type="text"
-                                                        value="<c:out value='${student.coordinator_id}' />" class="form-control"
-                                                        name="coordinator_id">
+                                                             value="<c:out value='${student.coordinator_id}' />"
+                                                             class="form-control"
+                                                             name="coordinator_id">
                     </fieldset>
 
                     <button type="submit" class="btn btn-success">Save</button>

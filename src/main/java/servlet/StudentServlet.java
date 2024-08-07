@@ -22,10 +22,12 @@ public class StudentServlet extends HttpServlet {
     public void init() {
         studentDAO = new StudentDAO();
     }
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         doGet(request, response);
     }
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String action = request.getServletPath();
@@ -55,6 +57,7 @@ public class StudentServlet extends HttpServlet {
             throw new ServletException(ex);
         }
     }
+
     private void listStudent(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException, ServletException {
         List<Student> listStudent = studentDAO.selectAllStudents();
@@ -62,11 +65,13 @@ public class StudentServlet extends HttpServlet {
         RequestDispatcher dispatcher = request.getRequestDispatcher("student-list.jsp");
         dispatcher.forward(request, response);
     }
+
     private void showNewForm(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         RequestDispatcher dispatcher = request.getRequestDispatcher("student-form.jsp");
         dispatcher.forward(request, response);
     }
+
     private void showEditForm(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
@@ -75,6 +80,7 @@ public class StudentServlet extends HttpServlet {
         request.setAttribute("student", existingUser);
         dispatcher.forward(request, response);
     }
+
     private void insertStudent(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException {
         String name = request.getParameter("name");
@@ -83,6 +89,7 @@ public class StudentServlet extends HttpServlet {
         studentDAO.insertStudent(newStudent);
         response.sendRedirect("list");
     }
+
     private void updateStudent(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
@@ -93,6 +100,7 @@ public class StudentServlet extends HttpServlet {
         studentDAO.updateStudent(update);
         response.sendRedirect("list");
     }
+
     private void deleteStudent(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));

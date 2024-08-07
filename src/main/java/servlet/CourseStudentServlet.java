@@ -22,10 +22,12 @@ public class CourseStudentServlet extends HttpServlet {
     public void init() {
         studentDAO = new StudentDAO();
     }
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         doGet(request, response);
     }
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String action = request.getServletPath();
@@ -40,6 +42,7 @@ public class CourseStudentServlet extends HttpServlet {
             throw new ServletException(ex);
         }
     }
+
     private void listCourseStudent(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException, ServletException {
         List<CourseStudent> listCourseStudent = studentDAO.selectAllCourseStudent();

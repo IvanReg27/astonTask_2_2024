@@ -16,27 +16,33 @@ class StudentServletTest {
     void setup() {
         MockitoAnnotations.openMocks(this);
     }
+
     @Test
     void init() {
         assertEquals(null, newStudentServlet.getInitParameterNames());
     }
+
     @Test
     void doGet() {
         assertEquals(null, newStudentServlet.getServletName());
     }
+
     @Test
     void remoteServiceReturnInit() {
         when(newStudentServlet.getInitParameterNames()).thenReturn(null);
     }
+
     @Test
     void remoteServiceReturnDoGet() {
         when(newStudentServlet.getServletName()).thenReturn(null);
     }
+
     @Test
     void verificationInit() {
         newStudentServlet.init();
         verify(newStudentServlet).init();
     }
+
     @Test
     void verificationDoGet() {
         newStudentServlet.getServletName();

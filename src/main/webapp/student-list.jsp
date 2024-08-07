@@ -7,8 +7,8 @@
 --%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+         pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
     <title>Student Management Application</title>
@@ -59,9 +59,9 @@
             <c:forEach var="student" items="${listStudent}">
 
                 <tr>
-                    <td><c:out value="${student.id}" /></td>
-                    <td><c:out value="${student.name}" /></td>
-                    <td><c:out value="${student.coordinator_id}" /></td>
+                    <td><c:out value="${student.id}"/></td>
+                    <td><c:out value="${student.name}"/></td>
+                    <td><c:out value="${student.coordinator_id}"/></td>
                     <td><a href="edit?id=<c:out value='${student.id}' />">Edit</a>
                         &nbsp;&nbsp;&nbsp;&nbsp; <a
                                 href="delete?id=<c:out value='${student.id}' />">Delete</a></td>

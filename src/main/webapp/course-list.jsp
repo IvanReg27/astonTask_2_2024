@@ -6,8 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+         pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
     <title>Course Management Application</title>
@@ -51,8 +51,8 @@
             <c:forEach var="course" items="${listCourse}">
 
             <tr>
-                <td><c:out value="${course.id}" /></td>
-                <td><c:out value="${course.course}" /></td>
+                <td><c:out value="${course.id}"/></td>
+                <td><c:out value="${course.course}"/></td>
                 </c:forEach>
 
             </tbody>
